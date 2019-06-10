@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Picture classification</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/et-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link id="main" rel="stylesheet" type="text/css" href="css/publisher.css">
+</head>
+<body id="loading">
+<div id="wrapper" class="behind">
+<header>
+	<div class="container">
+	 	 <div class="col-md-6  hidden-sm hidden-xs wow animated" style="width: 30%;margin-top: 100px" align="left">
+	 	   <h2 class="heading">Classification</h2>
+			 <h4 class="subheading" style="margin-top: 0px">Package Name</h4><input type="text" id="packageName">
+			 <button type="button" onclick="createPackage()">Create Package</button>
+	 	   <input class="scrollto btn btn-white" id="f" type="file" name="f"  multiple="multiple" onChange="change()" style="width: 100%" />
+			 <a href="#" class="scrollto btn btn-white" onClick="startTraining()">Start Training</a>
+			 <a href="#" class="scrollto btn btn-white" onClick="downloadTraining()">Download Training</a>
+
+			</div>
+	  		<div class="col-md-6 col-sm-12 wow animated fadeInUp" style="width: 49%" align="center">
+				<h4 class="subheading" style="margin-top: 100px" id="page"></h4>
+				<div >
+				  <img src="img/image.jpg" alt="" id="preview" name="pic" style="width: 100%">
+				</div>
+				<div class="" align="center">
+					<a href="#" id="tagName" class="scrollto btn btn-white" >Tag ?</a>
+					<a href="#" class="scrollto btn btn-white" onClick="p_action()"><</a>
+					<a href="#" class="scrollto btn btn-white" onClick="n_action()">></a>
+					<a href="#" class="scrollto btn btn-white" onClick="removeFile()">Erase</a>
+				</div>
+			</div>
+			<div id="typeList" class=" hidden-sm hidden-xs wow animated fadeInUp" align="right" style="float:right; width:20% ;margin-top: 100px">
+			  <h4 class="subheading">Tap the type button to upload.</h4>
+			  <a href="#" class="scrollto btn btn-white" onClick="onUpload(1)">type 1</a>
+				<a href="#" class="scrollto btn btn-white" onClick="onUpload(2)">type 2</a>
+				<a href="#" class="scrollto btn btn-white" onClick="onUpload(3)">type 3</a>
+				<a href="#" class="scrollto btn btn-white" onClick="onUpload(4)">type 4</a>
+				<a href="#" class="scrollto btn btn-white" onClick="onUpload(5)">type 5</a>
+	 	 </div>
+	</div>
+</header>
+
+<nav class="navbar navbar-default"> <!-- /.container-fluid -->
+</nav>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 text-left text-center-mobile">
+			  <p class="copyright small muted">Copyright © 2019 &nbsp;- All rights reserved!</p>
+			</div>
+			<div class="col-sm-6 text-right text-center-mobile"> </div>
+		</div>
+	</div>
+</footer>
+
+</div>
+
+<div class="notification-box"><span>Sending...</span></div>
+<div class="mobile-nav">
+	<ul class="menu">
+
+	</ul>
+</div>
+
+
+<link href="css/showLoading.css" rel="stylesheet" media="screen" />
+<!-- <script src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.js"></script> -->
+	<!-- <script src="js/pwd.js"></script> -->
+	<script src="js/placeImage.js"></script>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.onepagenav.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/jquery.form-validator.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.showLoading.min.js"></script>
+</body>
+</html>
